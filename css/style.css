@@ -467,6 +467,9 @@ img {
 	gap: 16px;
 }
 
+
+
+
 .backdrop {
 	position: fixed;
 	top: 0;
@@ -488,6 +491,7 @@ img {
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	padding: 72px 24px 24px;
 	transform: translate(-50%, -50%) scale(1);
 	border-radius: 4px;
 	width: 408px;
@@ -505,7 +509,7 @@ img {
 	position: absolute;
 	top: 24px;
 	right: 24px;
-	width: 24px; 
+	width: 24px;
 	height: 24px;
 	cursor: pointer;
 	border-radius: 100%;
@@ -515,15 +519,61 @@ img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 0;
 }
 
 .close-btn:hover .icon-close-btn,
 .close-btn:focus .icon-close-btn {
-fill: #fff
+	fill: #fff;
 }
 
 .close-btn:hover,
 .close-btn:focus {
-background-color: #404bbf;
-border: none;
+	background-color: #404bbf;
+	border: none;
 }
+
+.modal-text {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	text-align: center;
+	color: #2e2f42;
+	margin-bottom: 16px;
+}
+
+.label-text {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.16667;
+	letter-spacing: 0.04em;
+	color: #8e8f99;
+	margin-bottom: 4px;
+	display: block;
+}
+.wrapper-label-input {
+	margin-bottom: 8px;
+}
+.wrapper-input-username {
+	position: relative;
+}
+.icon-input {
+	position: absolute;
+	top: 50%;
+	left: 16px;
+	transform: translateY(-50%);
+}
+.input-border {
+	width: 100%;
+	border-radius: 4px;
+	min-height: 40px;
+	border: 1px solid rgba(46, 47, 66, 0.4);
+}
+
+.input-border:focus-within {
+	border: 1px solid #4d5ae5;
+
+}
+
+
