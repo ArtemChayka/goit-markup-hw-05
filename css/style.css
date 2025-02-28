@@ -711,7 +711,7 @@ img {
 	background-color: #404bbf;
 	border: none;
 }
-.checkbox:checked + .label-checkbox .icon-checkbox {
+.checkbox:checked + .label-checkbox >.span-icon-checkbox > .icon-checkbox {
 	fill: #f4f4fd;
 }
 .label-checkbox {
