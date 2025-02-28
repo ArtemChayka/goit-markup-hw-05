@@ -701,8 +701,8 @@ img {
 	background-color: transparent;
 	border-radius: 2px;
 	border: 1px solid rgba(46, 47, 66, 0.4);
-	transition: background-color 50ms cubic-bezier(0.4, 0, 0.2, 1),
-		border-color 50ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	cursor: pointer;
 	margin-right: 8px;
 	fill: transparent;
@@ -711,7 +711,7 @@ img {
 	background-color: #404bbf;
 	border: none;
 }
-.checkbox:checked + .label-checkbox >.span-icon-checkbox > .icon-checkbox {
+.checkbox:checked + .label-checkbox > .span-icon-checkbox .icon-checkbox {
 	fill: #f4f4fd;
 }
 .label-checkbox {
