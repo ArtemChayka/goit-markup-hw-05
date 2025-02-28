@@ -313,6 +313,18 @@
           </li>
         </ul>
       </div>
+      <div class="footer-subscribe-container">
+        <p class="footer-subscribe-text">Subscribe</p>
+        <form>
+          <label for="input-footer-subscribe"><input id="input-footer-subscribe" type="email" name="userEmail" class="input-subscribe" placeholder="E-mail">
+          </label>
+          <button type="submit" class="subscribe-btn">Subscribe
+            <svg class="icon-arrow" width="24" height="24">
+              <use href="./images/icons.svg#icon-arrow"></use>
+            </svg></button>
+          </form>
+      </div>
+
     </div>
   </footer>
   <div class="backdrop is-open">
@@ -326,8 +338,8 @@
       <form action="#">
         <div class="wrapper-label-input">
           <label for="username" class="label-text">Name</label>
-          <div class="wrapper-input-username">
-            <input type="text" name="userName" id="username" class="input-border input-border-one">
+          <div class="wrapper-input">
+            <input type="text" name="userName" id="username" class="input-form input-form-one">
             <svg class="icon-input" width="18" height="18">
               <use href="./images/icons.svg#icon-person-black"></use>
           </svg>
@@ -335,8 +347,8 @@
         </div>
         <div class="wrapper-label-input">
           <label for="userphone" class="label-text">Phone</label>
-          <div class="wrapper-input-username">
-            <input type="tel" id="userphone" name="userphone" class="input-border">
+          <div class="wrapper-input">
+            <input type="tel" id="userphone" name="userphone" class="input-form">
             <svg class="icon-input" width="18" height="24">
               <use href="./images/icons.svg#icon-phone-black"></use>
             </svg>
@@ -344,13 +356,27 @@
         </div>
         <div class="wrapper-label-input">
           <label for="useremail" class="label-text">Email</label>
-          <div class="wrapper-input-username">
-            <input type="email" id="useremail" name="userEmail" class="input-border">
+          <div class="wrapper-input">
+            <input type="email" id="useremail" name="userEmail" class="input-form">
             <svg class="icon-input" width="18" height="24">
               <use href="./images/icons.svg#icon-email-black"></use>
             </svg>
           </div>
         </div>
+        <div class="wrapper-label-input wrapper-label-input-textarea">
+          <label for="user-textarea" class="label-text">Comment</label>
+          <textarea name="userTextarea" id="user-textarea" class="input-form" placeholder="Text input"></textarea>
+        </div>
+        <div>
+          <input type="checkbox" class="checkbox visually-hidden" id="user-checkbox">
+          <label for="user-checkbox" class="label-checkbox">
+            <span class="span-icon-checkbox">
+              <svg class="icon-checkbox" width="10" height="8">
+          <use href="./images/icons.svg#icon-checkbox"></use>
+        </svg>
+      </span>I accept the terms and conditions of the <a href="#" class="link-checkbox">Privacy Policy</a></label>
+    </div>
+    <button type="submit" class="submit-btn">Send</button>
       </form>
     </div>
   </div>
